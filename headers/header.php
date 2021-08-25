@@ -26,4 +26,4 @@
 
 <body class="wide-layout">
 
-<div id="fakeLoader"></div>
+ 
