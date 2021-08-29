@@ -27,7 +27,7 @@ NOTE: This is Header style file. All Header related style included in this file.
 }
 
 .header-menu ul li:hover a {
-    color: #f9c322;
+    color: #36cc1b;
 }
 
 .header-menu {
@@ -73,7 +73,7 @@ NOTE: This is Header style file. All Header related style included in this file.
 }
 
 .add-property>a {
-    background: #f9c322 none repeat scroll 0 0;
+    background: #36cc1b none repeat scroll 0 0;
     border: 1px solid rgba(0, 0, 0, 0);
     color: #ffffff;
     display: inline-block;
@@ -91,7 +91,7 @@ NOTE: This is Header style file. All Header related style included in this file.
 }
 
 .logo>a {
-    background: #ffffff none repeat scroll 0 0;
+    background: #004395 none repeat scroll 0 0;
     display: inline-block;
     height: 130px;
     position: relative;
@@ -106,7 +106,7 @@ NOTE: This is Header style file. All Header related style included in this file.
 --------------*/
 
 .header-top-1 .haven-call>p {
-    color: #f9c322;
+    color: #36cc1b;
     font-size: 14px;
 }
 
@@ -167,7 +167,7 @@ NOTE: This is Header style file. All Header related style included in this file.
 }
 
 .search-close-btn>a:hover i {
-    color: #f9c322;
+    color: #36cc1b;
     -webkit-transform: scale(1.5) rotate(180deg);
     -ms-transform: scale(1.5) rotate(180deg);
     transform: scale(1.5) rotate(180deg);
@@ -215,7 +215,7 @@ NOTE: This is Header style file. All Header related style included in this file.
 }
 
 .header-topbar-menu ul li a:hover {
-    color: #f9c322;
+    color: #36cc1b;
 }
 
 .header-2 .header-menu ul li a {
@@ -255,7 +255,7 @@ NOTE: This is Header style file. All Header related style included in this file.
 }
 
 .home-map .haven-call p {
-    background: #f9c322 none repeat scroll 0 0;
+    background: #36cc1b none repeat scroll 0 0;
     color: #303030;
     display: inline-block;
     font-size: 16px;
@@ -395,7 +395,7 @@ NOTE: This is Header style file. All Header related style included in this file.
 }
 
 .header-menu ul li ul.mega_menu li ul li a:hover {
-    color: #f9c322;
+    color: #36cc1b;
 }
 
 .header-menu ul li ul.mega_menu li a.title {
@@ -461,5 +461,5 @@ NOTE: This is Header style file. All Header related style included in this file.
 
 .logo img {
     margin-top: 15px;
-    width: 80px;
+    width: 123px;
 }

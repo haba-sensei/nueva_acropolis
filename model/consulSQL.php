@@ -1,6 +1,6 @@
 <?php
 
-$conectame = '';
+$conectame = 'local';
  
 switch ($conectame) {
     case 'local':

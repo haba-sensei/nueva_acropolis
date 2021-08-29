@@ -1,3 +1,7 @@
+<?php
+include 'model/consulSQL.php';
+include 'model/data.php';
+?>
 <!doctype html>
 <html class="no-js" lang="es">
 

@@ -5,7 +5,7 @@
                 <div class="row">
                     <div class="col-lg-2 col-md-4 col-sm-6">
                         <div class="logo">
-                            <a href="index.php"><img src="img/logo/logo.png" alt=""></a>
+                            <a href="index.php"><img src="img/logo/logo_3.png" alt=""></a>
                         </div>
                     </div>
                     <div class="col-lg-10 d-none d-lg-block">
@@ -13,7 +13,7 @@
                             <div class="header-menu">
                                 <nav>
                                     <ul>
-                                    <li><a href="inicio.php">Inicio</a></li>
+                                    <li><a href="index.php">Inicio</a></li>
                                     <li><a href="proyectos.php">Proyectos</a></li>
                                     <li><a href="departamentos.php">Departamentos</a></li>
                                     <li><a href="conocenos.php">Conocenos</a></li>
@@ -31,7 +31,7 @@
                     <div class="col-12">
                         <nav id="dropdown">
                             <ul>
-                            <li><a href="inicio.php">Inicio</a></li>
+                            <li><a href="index.php">Inicio</a></li>
                                     <li><a href="proyectos.php">Proyectos</a></li>
                                     <li><a href="departamentos.php">Departamentos</a></li>
                                     <li><a href="conocenos.php">Conocenos</a></li>
@@ -66,7 +66,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="add-property login_agente">
-                            <a class="agente_btn" href="adminP/index.php">AGENTE INMOBILIARIO</a>
+                            <a class="agente_btn" data-target="#quick-view" data-toggle="modal" href="javascript:">AGENTE INMOBILIARIO</a>
                         </div>
                     </div>
                 </div>
