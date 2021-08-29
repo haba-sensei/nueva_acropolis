@@ -11,10 +11,10 @@ switch ($conectame) {
     break;
     
     case 'vivo':
-        define("USER", "vlrrywof_user_med");
+        define("USER", "bxeaxpdd_acropolis_user");
         define("SERVER", "localhost");
-        define("BD", "vlrrywof_medicos");
-        define("PASS", "hpY@h*e@[PRZ");
+        define("BD", "bxeaxpdd_acropolis_bd");
+        define("PASS", "L#L#j_B]DfX]");
     break;
         
 }
