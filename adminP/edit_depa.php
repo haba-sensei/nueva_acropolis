@@ -1,6 +1,7 @@
 <?php
 include '../model/consulSQL.php';
 include '../model/data.php';
+include '../model/sessiones.php';
 include 'addons/header.php';
 
 ?>

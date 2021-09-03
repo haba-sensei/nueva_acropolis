@@ -19,9 +19,10 @@ if (!$usuario == "" && !$clave == "") {
     $AfilC = mysqli_num_rows($verAfil);
 
         if ($AfilC > 0) { 
-        $_SESSION["iniciarSesion"] = "ok";
+           
+          $_SESSION["iniciarSesion"] = "ok";
         
-          echo '<script>window.location = "dashboard"; </script>';
+          echo '<script>  window.location = "adminP/index.php"; </script>';
             
        
            

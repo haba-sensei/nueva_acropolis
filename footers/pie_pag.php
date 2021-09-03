@@ -4,10 +4,30 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="map-area">
-                            <div id="contact-map" class="map-area">
-                                <div id="googleMap" style="width:100%;height:365px;">
+                            <style>
+                                 .mapa_aqui {
+                                   width: 100%;
+                            }                
+                            @media (max-width: 767px) {
+                            .login_agente {
+                                display: block !important;
+                                position: relative;
+                                left: 43px;
+                                top: 6px;
+                            }
+
+                            .mapa_aqui {
+                                width: 278px;
                                 
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.8631713985487!2d-77.00216385000785!3d-12.121513146552754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c7f497c9a0c5%3A0x7964ae4f5e28e2cc!2sLaurel%20Rosa%20429%2C%20Surquillo%2015038!5e0!3m2!1ses!2spe!4v1630151238804!5m2!1ses!2spe" width="1140" height="360" style="border:0;" allowfullscreen="off" loading="lazy"></iframe>
+                            }
+                            }
+
+                           
+                            </style>
+                            <div id="contact-map" class="map-area">
+                                <div id="googleMap"  style="height: 365px;">
+                                
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.8631713985487!2d-77.00216385000785!3d-12.121513146552754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c7f497c9a0c5%3A0x7964ae4f5e28e2cc!2sLaurel%20Rosa%20429%2C%20Surquillo%2015038!5e0!3m2!1ses!2spe!4v1630151238804!5m2!1ses!2spe"  height="360" class="mapa_aqui" style="border:0;" allowfullscreen="off" loading="lazy"></iframe>
                                 </div>
                             </div>
                             <!--Footer desc start-->
@@ -67,7 +87,7 @@
                                                 <p>Celular : +51 947-282-784</p>
                                             </div>
                                         </div>
-                                        <div class="single-contact-list">
+                                        <div class="single-contact-list" style="display: inline-flex;">
                                             <div class="contact-icon">
                                                 <img src="img/icon/c-3.png" alt="">
                                             </div>

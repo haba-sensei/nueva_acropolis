@@ -1,6 +1,7 @@
 <?php 
 include '../model/consulSQL.php';
 include '../model/data.php';
+include '../model/sessiones.php';
 include 'addons/header.php';
 
 ?>
@@ -49,7 +50,19 @@ include 'addons/header.php';
             </div>
         </div>
 
-
+<style>
+.child li {
+    display: table-caption;
+}
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 0px!important; 
+    margin-left: 0px!important;
+}
+</style>
 <div class="main_content_iner ">
         <div class="p-0 container-fluid">
             <div class="row justify-content-center">

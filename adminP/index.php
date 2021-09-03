@@ -1,6 +1,7 @@
 <?php 
 include '../model/consulSQL.php';
 include '../model/data.php';
+include '../model/sessiones.php';
 include 'addons/header.php';
 
 ?>
@@ -9,6 +10,7 @@ include 'addons/header.php';
 
 
 <?php include 'addons/sidebar.php'; ?>
+
 
 
 <section class="main_content dashboard_part">
@@ -88,7 +90,7 @@ include 'addons/header.php';
             </div>
         </div>
     </div>
-
+    <?php print_r($_SESSION["iniciarSesion"]) ?>
  
 </section>
 

@@ -1,6 +1,6 @@
 <nav class="sidebar">
     <div class="logo d-flex justify-content-between">
-        <a href="dashboard.php"><img src="../img/logo/logo_3.png" alt=""></a>
+        <a href="index.php"><img src="../img/logo/logo_3.png" alt=""></a>
         <div class="sidebar_close_icon d-lg-none">
             <i class="ti-close"></i>
         </div>

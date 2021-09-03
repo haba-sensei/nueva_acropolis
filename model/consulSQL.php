@@ -61,8 +61,8 @@ class consultasSQL{
         return $consul;
     }
 }
- 
 
+ 
 
          
  

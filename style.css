@@ -3192,12 +3192,12 @@ article blockquote {
 
 .contact-list-inner {
     background: #f5f8fd none repeat scroll 0 0;
-    box-shadow: 1px 0 21px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 0 21px rgb(0 0 0 / 20%);
     margin-bottom: 58px;
     margin-top: 60px;
     padding-bottom: 49px;
-    padding-left: 50px;
-    padding-top: 52px;
+    padding-left: 10px;
+    padding-top: 24px;
 }
 
 .single-contact-icon {
@@ -3432,7 +3432,7 @@ article blockquote {
 }
 
 .modal-dialog {
-    width: 400px;
+    width: 355px;
 }
 
 .modal-header {
