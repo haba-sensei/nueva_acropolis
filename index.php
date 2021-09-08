@@ -20,8 +20,34 @@
                                     </div>
                                     <div class="title-2">
                                         <h1 class="cd-headline letters type">
-                                             
-                                            <span class="cd-words-wrapper">
+                                             <style>
+                                 .texto_formato {
+                               font-size: 60px!important
+                            }
+                             .ajust_box {
+                                padding-right: 70px;
+                            }
+        
+                            @media (max-width: 767px) {
+                            .texto_formato {
+                               font-size: 31px!important;
+                                   padding-bottom: 14px;
+                            }
+                            .slide1-text {
+                            position: relative;
+                            z-index: 9;
+                            left: 4px;
+                            }
+                             .ajust_box {
+                                padding-right: 15px;
+                            }
+                           
+                            
+                            }
+
+                           
+                            </style>
+                                            <span class="cd-words-wrapper texto_formato" >
                                                 <b class="is-visible">Constructora</b>
                                                 <b>Inmobiliaria</b> 
                                             </span>
@@ -80,7 +106,7 @@
                                             $mapa_proyecto = $datos_proyect_C['mapa']; 
                                             
                                             
-                                            echo '<div class="col-md-4 col-12">
+                                            echo '<div class="col-md-4 col-12 ajust_box">
                                             <div class="single_property mb-30">
                                                 <div class="single_propert_img">
                                                     <img style="width: 360px; height: 360px;" src="images/proyectos/'.$imagen_proyecto.'" alt="'.$nombre_proyecto.'">
@@ -108,104 +134,7 @@
             </div>
         </div>
     </div>
-     
-
-    <!--Feature property section start-->
-    <div class="property-area fadeInUp wow mt-150" data-wow-delay="0.2s">
-        <div class="container">
-           <div class="row">
-                    <div class="col-md-12">
-                        <div class="feature-property-title" align="center">
-                        <h3>NUEVOS DEPARTAMENTOS</h3>
-                        </div>
-                    </div>
-                </div>
-            
-            <div class="row pt-100">
-                <div class="col-12">
-                    <div class="tab-content" id="property-tab-content">
-                        <div role="tabpanel" class="tab-pane active" id="sale" aria-labelledby="property-sale-tab">
-                            <div class="property-list owl-carousel">
-                            <?php 
-                            while($datos_depa_C=mysqli_fetch_assoc($depaCons)){
-                                $id_depa = $datos_depa_C['id']; 
-                                $nombre_depa = $datos_depa_C['nombre']; 
-                                $direccion_depa = $datos_depa_C['direccion']; 
-                                $imagen_depa = $datos_depa_C['imagen']; 
-                                $imagenes_depa = $datos_depa_C['imagenes']; 
-                                $descripcion_depa = $datos_depa_C['descripcion']; 
-                                $detalles_base_depa = $datos_depa_C['detalles_base']; 
-                                $detalles_extras_depa = $datos_depa_C['detalles_extras']; 
-                                $plano_depa = $datos_depa_C['plano']; 
-                                $video_depa = $datos_depa_C['video']; 
-                                $tags_depa = $datos_depa_C['tags']; 
-                                $slider_depa = $datos_depa_C['slider']; 
-                                $mapa_depa = $datos_depa_C['mapa']; 
-
-                                $detalles_base_depa_obj = json_decode( $detalles_base_depa, true); 
-                                
-                                echo '
-                                <div class="item">
-                                    <div class="single-property">
-                                        <div class="property-img">
-                                            <a href="departamento.php?depa='.$id_depa.'">
-                                                <img src="images/departamentos/'.$imagen_depa.'" alt="'.$nombre_depa.'">
-                                            </a>
-                                        </div>
-                                        <div class="property-desc">
-                                            <div class="property-desc-top">
-                                                <h6 class="capitalize"><a href="departamento.php?depa='.$id_depa.'">'.$nombre_depa.'</a></h6>
-                                                <h4 class="price"></h4>
-                                                <div class="property-location">
-                                                    <p><img src="img/property/icon-5.png" alt="">'.$direccion_depa.' </p>
-                                                </div>
-                                            </div>
-                                            <div class="property-desc-bottom">
-                                                <div class="property-bottom-list">
-                                                    <ul>
-                                        
-                                                    <li>
-                                                    <img src="img/property/icon-'.$detalles_base_depa_obj[0]['icon1'].'.png" alt="">
-                                                    <span>'.$detalles_base_depa_obj[0]['mide'].'</span>
-                                                    </li>
-                
-                                                    <li>
-                                                    <img src="img/property/icon-'.$detalles_base_depa_obj[0]['icon2'].'.png" alt="">
-                                                    <span>'.$detalles_base_depa_obj[0]['habitaciones'].'</span>
-                                                    </li>
-                
-                                                    <li>
-                                                    <img src="img/property/icon-'.$detalles_base_depa_obj[0]['icon3'].'.png" alt="">
-                                                    <span>'.$detalles_base_depa_obj[0]['baños'].'</span>
-                                                    </li>
-                
-                                                    <li>
-                                                    <img src="img/property/icon-'.$detalles_base_depa_obj[0]['icon4'].'.png" alt="">
-                                                    <span>'.$detalles_base_depa_obj[0]['cochera'].'</span>
-                                                    </li>
-                                            
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                ';
-                            }
-
-                            ?>
-                                
-                                 
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Feature property section end-->
-
+      
     <!--Welcome Haven section-->
     <div class="welcome-haven bg-1 fadeInUp wow" data-wow-delay="0.2s">
         <div class="container">
@@ -213,14 +142,14 @@
                 <div class="col-lg-6 col-12 fadeInLeft wow welcome-pd" data-wow-delay="0.2s">
                     <div class="welcome-title">
                         <h3 class="title-1">BIENVENIDO SOMOS <br> CONSTRUCTORA E INMOBILIARIA <span>NUEVA ACROPOLIS</span></h3>
-                        <h4 class="title-2">NUESTRA PRIORIDAD SON NUESTROS CLIENTES!</h4>
+                        <h4 class="title-2">Mas que una empresa somos una familia</h4>
                     </div>
-                    <div class="welcome-content"  >
-                        <p> <span>NUESTRA MISIÓN</span> 
-                            Somos una empresa constructora dedicada a la construcción y comercialización de edificios de vivienda multifamiliares con altos estándares de calidad e innovación, para ello contamos con profesionales capacitados y trabajamos con materiales de mayor calidad  que nos permiten brindar seguridad a nuestros clientes y satisfacción por nuestros acabados innovadores.
-                            Nos comprometemos con el bienestar de nuestros clientes antes, durante y después de finalizado el proyecto, y  ello nos permite forjar relaciones de confianza.
-                            <span>NUESTRA VISIÓN</span>  
-                            Seremos una  empresa líder en construcción reconocida a nivel nacional, por la atención brindada a nuestros clientes y por la calidad y cumplimiento de las más exigentes normas de seguridad para llevar acabo nuestros edificios.</p>
+                    <div class="welcome-content"  align="justify">
+                        <p>  Somos una empresa peruana dedicada a la construcción y ventas de edificios de vivienda multifamiliares con altos estándares de calidad, para ello contamos con un equipo de  profesionales capacitados haciendo uso de herramientas y materiales innovadores garantizando la calidad, seguridad y satisfacción de nuestros clientes en cada uno de nuestros proyectos.
+<span>NUESTRA MISIÓN</span> 
+Comprometernos con el bienestar de nuestros clientes antes, durante y después de finalizado el proyecto, con ello lograr un nivel de satisfacción y excelencia en su gestión adaptándonos a las necesidades de cada uno, logrando superar sus expectativas. Consolidar nuestro grupo humano y profesional basado en la responsabilidad, integridad y compromiso con nuestra empresa valorando el capital humano en cada uno de nuestros colaboradores
+ <span>NUESTRA VISIÓN</span>  
+Ser una empresa líder en construcción reconocida a nivel  nacional por su prestigio y alto compromiso en desarrollar técnicas innovadoras y de calidad para cada uno de nuestros proyectos, con la finalidad de brindar una infraestructura integra y segura para la satisfacción de  nuestros clientes.  </p>
                     </div>
                      
                 </div>

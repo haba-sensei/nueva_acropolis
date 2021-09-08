@@ -4,6 +4,7 @@ error_reporting(E_ALL ^ E_NOTICE ^ E_WARNING);
 include '../../model/consulSQL.php'; 
  
 $nombre = $_POST['nombre'];
+$proyecto_id = $_POST['proyecto_id'];
 $direccion = $_POST['direccion'];
 $descripcion = $_POST['descripcion']; 
 $video = $_POST['video'];
@@ -219,9 +220,10 @@ $detalles_base = json_encode($resultado_base, JSON_UNESCAPED_UNICODE);
       
          
     consultasSQL::InsertSQL("departamentos",  
-    "nombre, direccion, imagenes, imagen, descripcion, detalles_base, detalles_extras, plano, video, tags, mapa",
+    "nombre, direccion, proyecto_id, imagenes, imagen, descripcion, detalles_base, detalles_extras, plano, video, tags, mapa",
     "'$nombre', 
     '$direccion', 
+    '$proyecto_id', 
     '$imagenes', 
     '$imagen', 
     '$descripcion', 

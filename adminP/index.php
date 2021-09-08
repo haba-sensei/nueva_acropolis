@@ -90,7 +90,7 @@ include 'addons/header.php';
             </div>
         </div>
     </div>
-    <?php print_r($_SESSION["iniciarSesion"]) ?>
+    
  
 </section>
 

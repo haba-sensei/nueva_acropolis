@@ -7,6 +7,7 @@ include '../../model/consulSQL.php';
 $id_proyecto = $_POST['id_depa'];
 $nombre = $_POST['nombre'];
 $direccion = $_POST['direccion'];
+$proyecto_id = $_POST['proyecto_id'];
 $descripcion = $_POST['descripcion']; 
 $video = $_POST['video'];
 $mapa = $_POST['mapa'];
@@ -220,9 +221,10 @@ $detalles_base = json_encode($resultado_base, JSON_UNESCAPED_UNICODE);
     $detalles_extra = json_encode($opcion_array, JSON_UNESCAPED_UNICODE);
  
     consultasSQL::UpdateSQL("departamentos", 
-    "nombre='$nombre',
+        "nombre='$nombre',
         direccion='$direccion', 
-        descripcion='$descripcion',
+        proyecto_id='$proyecto_id',
+        descripcion='$descripcion',       
         detalles_base='$detalles_base',
         detalles_extras='$detalles_extra', 
         video='$video',

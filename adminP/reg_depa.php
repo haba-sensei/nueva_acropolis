@@ -65,6 +65,23 @@ include 'addons/header.php';
                                     <input type="texto" class="form-control" name="nombre" id="nombre" placeholder="Ingresa el nombre del departamento">
                                 </div>
 
+                                <div class="form-group">
+                                    <label for="nombre">Proyecto Asociado</label>
+                                    <select class="form-control" name="proyecto_id" id="proyecto_id" style="text-transform: capitalize;">  
+                                    <?php 
+                                         while($datos_proyect_id=mysqli_fetch_assoc($proyectCons)){
+                                            $id_proyect = $datos_proyect_id['id']; 
+                                            $nombre_proyect = $datos_proyect_id['nombre']; 
+
+                                            echo '<option value="'.$id_proyect.'" >'.$nombre_proyect.'</option>';
+
+                                         } 
+                                    ?>
+                                        
+                                    </select>
+                                    
+                                </div>
+
 
                                 <div class="form-group">
                                     <label for="direccion">Direccion</label>

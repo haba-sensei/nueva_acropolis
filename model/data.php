@@ -31,7 +31,7 @@ DEPARTAMENTOS EDIT
 =============================================*/ 
 if (isset( $_GET['depa'])) {
      $depa_id_edit = $_GET['depa'];
-     $depaConsEdit = ejecutarSQL::consultar("SELECT `departamentos`.*, `departamentos`.`id` FROM `departamentos`  WHERE `departamentos`.`id` = '$depa_id_edit';"); 
+     $depaConsEdit = ejecutarSQL::consultar("SELECT `departamentos`.*, `departamentos`.`id`, `departamentos`.`nombre` AS nombre_depa, `proyectos`.*, `proyectos`.`nombre` AS nombre_proyect, `departamentos`.`proyecto_id` FROM `departamentos`, `proyectos` WHERE `departamentos`.`id` = '$depa_id_edit' AND `departamentos`.`proyecto_id` = `proyectos`.`id` "); 
 }
 
 /*=============================================

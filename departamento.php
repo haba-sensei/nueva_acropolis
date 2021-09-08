@@ -6,7 +6,7 @@
    <?php include 'headers/cabezera.php' ?>
  
     <?php 
-    while($datos_proyect_Single=mysqli_fetch_assoc($depaCons)){
+    while($datos_proyect_Single=mysqli_fetch_assoc($depaCons_single)){
         $id_proyecto = $datos_proyect_Single['id']; 
         $nombre_proyecto = $datos_proyect_Single['nombre']; 
         $direccion_proyecto = $datos_proyect_Single['direccion']; 
@@ -37,7 +37,7 @@
                         <div class="breadcrumbs-menu">
                             <ul>
                                 <li><a href="index.php">Inicio /</a></li>
-                                <li>Detalles del proyecto</li>
+                                <li>Detalles del departamento</li>
                             </ul>
                         </div>
                     </div>
@@ -195,26 +195,13 @@
                             </div>
                             <div class="planning">
                                 <div class="row">
-                                    <div class="col-lg-5 col-md-6 col-12">
+                                     
+                                    <div class="col-lg-12 col-md-12 col-12">
                                         <div class="plan-title">
-                                            <h5>Plano </h5>
-                                        </div>
-                                        <div class="plan-map">
-                                            <?php
-                                            
-                                            echo ' <img src="images/departamentos/'.$plano_proyecto.'" alt="">'; 
-                                            
-
-                                            ?> 
-                                           
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-7 col-md-6 col-12">
-                                        <div class="plan-title">
-                                            <h5>Ubicación</h5>
+                                            <h5>Ubicacion</h5>
                                         </div>
                                         <div class="vimeo-video">
-                                            <div class="embed-responsive mb-100 embed-responsive-4by3">
+                                            <div class="embed-responsive mb-100 embed-responsive-4by3" style="height: 311px;">
                                             <?=$mapa_proyecto ?> 
                                                      
                                            
@@ -230,7 +217,7 @@
                         <div class="sidebar right-side">
                             <aside class="single-side-box search-property">
                                 <div class="aside-title">
-                                    <h5>Descripción del proyecto</h5>
+                                    <h5>Descripcion del departamento</h5>
                                 </div>
                                 <div class="find_home-box">
                                     <div class="find_home-box-inner">
@@ -274,7 +261,25 @@
                             </aside>
                             <aside class="single-side-box video">
                                 <div class="aside-title">
-                                    <h5>Recorrido del proyecto</h5>
+                                    <h5>Plano de departamento</h5>
+                                </div>
+                                <div class="property-list_2 owl-carousel">
+                                    <div class="item" > 
+
+                                    <img src="images/departamentos/<?=$plano_proyecto ?> " alt="">
+
+
+
+                                    </div>
+                                    
+
+
+                                </div>
+
+                            </aside>
+                            <aside class="single-side-box video">
+                                <div class="aside-title">
+                                    <h5>Recorrido del departamento</h5>
                                 </div>
                                 <div class="video-sidebar">
                                     <div class="video-img">

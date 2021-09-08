@@ -27,7 +27,7 @@ NOTE: This is Header style file. All Header related style included in this file.
 }
 
 .header-menu ul li:hover a {
-    color: #36cc1b;
+    color: #0cbd8c;
 }
 
 .header-menu {
@@ -85,7 +85,7 @@ NOTE: This is Header style file. All Header related style included in this file.
 }
 
 .add-property>a:hover {
-    border-color: #f92222;
+    border-color: #f3f3f3;
     color: white;
     background: inherit;
 }

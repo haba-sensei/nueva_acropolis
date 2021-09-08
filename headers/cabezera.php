@@ -63,7 +63,7 @@
         }
 
         .agente_btn {
-            background: #f92222 none repeat scroll 0 0 !important;
+            background: #0cbd8c none repeat scroll 0 0 !important;
         }
     </style>
 

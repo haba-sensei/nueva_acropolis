@@ -64,7 +64,8 @@ include 'addons/header.php';
                             <?php 
                                 while($datos_proyect_Single=mysqli_fetch_assoc($depaConsEdit)){
                                 $id_proyecto = $datos_proyect_Single['id']; 
-                                $nombre_proyecto = $datos_proyect_Single['nombre']; 
+                                $nombre_proyecto = $datos_proyect_Single['nombre_depa'];  
+                                $nombre_proyecto_real = $datos_proyect_Single['nombre_proyect'];  
                                 $direccion_proyecto = $datos_proyect_Single['direccion']; 
                                 $imagen_proyecto = $datos_proyect_Single['imagen']; 
                                 $imagenes_proyecto = $datos_proyect_Single['imagenes']; 
@@ -87,6 +88,30 @@ include 'addons/header.php';
                                     <label for="nombre">Nombre del Departamento</label>
                                     <input type="texto" class="form-control" name="nombre" value="<?=$nombre_proyecto?>" id="nombre" placeholder="Ingresa el nombre del departamento">
                                 </div>
+
+                                <!-- <div class="form-group">
+                                    <label for="nombre">Proyecto Asociado</label>
+                                    <select class="form-control" name="proyecto_id" id="proyecto_id" style="text-transform: capitalize;">  
+                                    
+                                   <?php 
+
+                                         while($datos_proyect_id=mysqli_fetch_assoc($proyectCons)){
+                                            $id_proyect = $datos_proyect_id['id']; 
+                                            $nombre_proyect = $datos_proyect_id['nombre']; 
+                                            
+
+                                                echo '<option value="'.$id_proyect.'" >'.$nombre_proyect.'</option>';
+                                            
+                                             
+
+                                           
+
+                                         } 
+                                    ?>
+                                        
+                                    </select>
+                                    
+                                </div> -->
 
 
                                 <div class="form-group">
